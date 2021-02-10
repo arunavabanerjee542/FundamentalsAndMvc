@@ -1,0 +1,13 @@
+﻿
+@model FundamentalsAndMVC.ViewModel.ShoppingViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@foreach (var product in Model.Product)
+{
+    <h1>@product</h1>
+    <br>
+}  
+<h1> Total Price is @Model.price</h1>
